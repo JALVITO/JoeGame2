@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{563CA739-243B-E651-96B5-20D71574CDB5}</ProjectGuid>
+    <ProjectGuid>{8F34D0BC-E2CC-89BE-BC08-075C69EA3091}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,26 +67,28 @@
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\GameRay.cs" />
      <Compile Include="Assets\Scripts\Magnetize.cs" />
+     <Compile Include="Assets\Scripts\ManageUI.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\ShootRay.cs" />
      <Compile Include="Assets\Scripts\Spawn.cs" />
      <Compile Include="Assets\Scripts\Statistics.cs" />
      <Compile Include="Assets\Scripts\TargetBreak.cs" />
+     <Compile Include="Assets\Scripts\Win.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -293,13 +295,13 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/juanlizarraga/Documents/4toSemestre/Videojuegos/Challenge 2/JoeGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -649,7 +651,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FAE86338-1826-5C18-4F06-0109C371A1E0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{FE7110A0-97CD-D610-24B4-06D8AF40508E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

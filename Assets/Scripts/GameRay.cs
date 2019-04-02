@@ -14,7 +14,7 @@ public class GameRay : MonoBehaviour
     void Start()
     {
         targets = 0;
-        balls = 500;
+        balls = 50;
         ballLabel.text = "Marbles Left: " + balls;
     }
 

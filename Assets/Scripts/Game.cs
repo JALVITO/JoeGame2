@@ -30,7 +30,7 @@ public class Game : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
-        if (points == 1){
+        if (points == 4){
             StartCoroutine(waitVictory());
         }
 

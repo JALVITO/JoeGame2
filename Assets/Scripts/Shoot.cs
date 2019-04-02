@@ -24,7 +24,7 @@ public class Shoot : MonoBehaviour
         allowFire = false;
         clone = Instantiate(bala, transform.position,transform.rotation);
         clone.velocity = transform.TransformDirection(0,0,speed);
-        Destroy(clone.gameObject,3);
+        Destroy(clone.gameObject,10);
         yield return new WaitForSeconds(0.05F);
         allowFire = true;
     }
