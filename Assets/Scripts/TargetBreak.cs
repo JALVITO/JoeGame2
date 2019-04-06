@@ -12,7 +12,11 @@ public class TargetBreak : MonoBehaviour
         if (col.gameObject.tag == "bullet"){
             GetComponent<AudioSource>().Play();
             if (SceneManager.GetActiveScene().name == "ProyectileShooting"){
-                Game.points++;
+                if (gameObject.name == "HiddenTarget")
+                    Statistics.shotSecretTarget = true;
+                else
+                    Game.points++;
+
             }
             else{
                 GameRay.targets++;

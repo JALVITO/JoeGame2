@@ -26,7 +26,7 @@ public class Game : MonoBehaviour
 
         if (targetTime <= 0){
             Statistics.points = points;
-            Destroy(gameObject);
+            //Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
         }
 
@@ -41,7 +41,7 @@ public class Game : MonoBehaviour
     IEnumerator waitVictory(){
         yield return new WaitForSeconds(1.5F);
         Statistics.points = points;
-        Destroy(gameObject);
+        //Destroy(gameObject);
         SceneManager.LoadScene("Win");
     }
 }

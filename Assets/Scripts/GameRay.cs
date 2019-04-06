@@ -23,11 +23,13 @@ public class GameRay : MonoBehaviour
     {
         if (balls <= 0){
             Statistics.balls = balls;
-            Destroy(gameObject);
+            //Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
         }
 
         if (targets == 1){
+            if (balls >= 40)
+                Statistics.unlockedFunctions = true;
             StartCoroutine(waitVictory());
         }
 
@@ -37,7 +39,7 @@ public class GameRay : MonoBehaviour
     IEnumerator waitVictory(){
         yield return new WaitForSeconds(1.5F);
         Statistics.balls = balls;
-        Destroy(gameObject);
+        //Destroy(gameObject);
         SceneManager.LoadScene("Win");
     }
 }
